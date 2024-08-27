@@ -1,5 +1,5 @@
-# DSA_Practice
-A comprehensive guide and practice repository for Data Structures and Algorithms.
+# DSA_Practice_With_JavaScript
+A comprehensive guide and practice repository for Data Structures and Algorithms with javaScript.
 
 # Intermediate Data Structures Practice
 This repository covers intermediate-level Data Structures concepts, up to Linked Lists. It includes explanations and code for common problems in these areas.
