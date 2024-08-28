@@ -50,3 +50,30 @@ var kidsWithCandies = function(candies, extraCandies) {
     }
     return result;
 };
+
+
+//Solution : 2
+/**
+ * @param {number[]} candies
+ * @param {number} extraCandies
+ * @return {boolean[]}
+ */
+var kidsWithCandies = function(candies, extraCandies) {
+    let len = candies.length;
+    let result = new Array(len);
+    let havingMaxCandies = 0;
+    for(let i = 0; i< len; i++){
+        if(candies[i] > havingMaxCandies){
+            havingMaxCandies = candies[i];
+        }
+    }
+
+    for(let i = 0; i< len;i++){
+        result[i] = (candies[i] + extraCandies) >= havingMaxCandies
+    }
+
+    return result;
+};
+
+//Official editorial link
+//https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/editorial/
