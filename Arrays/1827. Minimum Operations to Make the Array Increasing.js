@@ -40,11 +40,14 @@ Constraints:
  */
 var minOperations = function(nums) {
     let totalOperations = 0;
+
+    if(nums.length == 1) return 0;
+
     for(let i = 0; i< nums.length -1; i++){
         if(nums[i] >= nums[i+1]){
-            let difference = (nums[i] - nums[i+1] + 1);
-            totalOperations += difference;
-            nums[i+1] += difference;
+            let difference = (nums[i] - nums[i+1]);
+            totalOperations += (difference + 1);
+            nums[i+1] += (difference + 1);
         }
     }
 
